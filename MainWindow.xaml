@@ -1,0 +1,21 @@
+﻿<Window x:Name="mainWindow" x:Class="Tema2_CuadrosTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_CuadrosTexto"
+        mc:Ignorable="d"
+        Title="Datos Personales" Height="336" Width="358" Icon="assets/data.ico">
+    <Grid>
+        <TextBox x:Name="boxName" HorizontalAlignment="Left" Height="23" Margin="51,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="box_KeyDown"/>
+        <TextBox x:Name="boxSurname" HorizontalAlignment="Left" Height="23" Margin="51,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="box_KeyDown"/>
+        <TextBox x:Name="boxAge" HorizontalAlignment="Left" Height="23" Margin="51,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="boxAge_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="51,46,0,0" TextWrapping="Wrap" Text="Nombre" VerticalAlignment="Top" RenderTransformOrigin="4.767,-1.817"/>
+        <TextBlock HorizontalAlignment="Left" Margin="51,116,0,0" TextWrapping="Wrap" Text="Apellido" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textAge" HorizontalAlignment="Left" Margin="51,189,0,0" TextWrapping="Wrap" Text="Edad" VerticalAlignment="Top" RenderTransformOrigin="-1.654,1.125"/>
+        <TextBlock x:Name="mensajeName" HorizontalAlignment="Left" Margin="189,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="106" Text="Nombre del cliente" IsEnabled="False" Visibility="Hidden"/>
+        <TextBlock x:Name="mensajeSurname" HorizontalAlignment="Left" Margin="189,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="106" Text="Apellido del cliente" IsEnabled="False" Visibility="Hidden"/>
+        <TextBlock x:Name="mensajeAge" HorizontalAlignment="Left" Margin="189,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="106" Text="Edad incorrecta" Foreground="#FFF91212" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
